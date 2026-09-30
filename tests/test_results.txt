@@ -1,0 +1,34 @@
+PASS phone_exact_mapping
+PASS presentation_exact_mapping
+PASS computer_media_exact_mapping
+PASS only_three_fixed_profiles
+PASS only_volume_keys_repeat
+PASS invalid_actions_rejected
+PASS web_menu_has_no_ble
+PASS boot_device_menu_only
+PASS phone_selects_directly
+PASS phone_back_disconnects
+PASS computer_submenu_has_two_items
+PASS presentation_selection_and_return
+PASS pc_media_selection_and_return
+PASS mode_does_not_change_from_menu_direction_when_running
+PASS every_reset_starts_device_selection
+PASS aborted_chord_waits_for_all_buttons
+PASS debounce_edges
+PASS debounce_clock_wrap
+PASS entry_waits_for_release
+PASS direction_press_once
+PASS direction_repeat
+PASS ab_short_taps
+PASS chord_exits_without_actions
+PASS aborted_chord_a_released_first
+PASS aborted_chord_b_released_first
+PASS aborted_chord_simultaneous_release
+PASS chord_clock_wrap
+PASS reset_discards_old_actions
+PASS repeat_clock_wrap
+PASS random_state_invariants
+
+30 portable logic tests passed. No ESP32 hardware used.
+PASS HID report 1 input: 8 bytes; output: 1 byte; report 2 input: 2 bytes
+This validates descriptor lengths only, not host BLE/HID compatibility.

@@ -1,0 +1,24 @@
+PASS all six editable key cards render
+PASS exactly three profiles in browser
+PASS phone default Up is Previous track
+PASS phone default Left is Volume +
+PASS A and B repeat controls stay locked
+PASS desktop layout has no horizontal overflow
+PASS edits visibly mark the selected profile unsaved
+PASS save sends keyboard usage and Ctrl+Shift bits
+PASS save leaves both other profiles unchanged
+PASS client rejects a non-ASCII OLED label before HTTP save
+PASS canceling discard keeps the edited profile selected
+PASS accepting discard loads the other profile
+PASS disabled action locks command and repeat inputs
+PASS disabled action serializes canonical zero usage
+PASS Reset this profile restores its factory values
+PASS 390px mobile layout has no horizontal overflow
+PASS mobile uses full-width single-column key cards
+PASS Restore all resets the three profiles
+PASS exit locks the browser controls
+PASS no browser JavaScript execution errors
+PASS page requests only local firmware assets and APIs
+
+21 Chromium UI checks passed against simulated HTTP responses.
+Local HTML/CSS/JS rendered in memory; fetch and confirmation responses are test doubles. No real HTTP/CSP, Wi-Fi, iOS or ESP32 tested.

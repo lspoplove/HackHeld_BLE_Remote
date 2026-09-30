@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>DSTIKE Remote · Key Setup</title>
+<link rel="stylesheet" href="/app.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<main>
+<header><div><div class="eyebrow">DSTIKE / HACKHELD</div><h1>Make every key yours.</h1><p class="subtitle">On-device key setup · BLE Remote v3</p></div><span class="badge">LOCAL SETUP</span></header>
+<section class="notice"><strong>Bluetooth controls are paused.</strong> Save your changes, then exit setup and choose Phone or Computer on the remote. This Wi-Fi network does not provide Internet access.</section>
+<div class="toolbar"><label for="profile">Control profile<select id="profile" disabled><option value="0">Phone · Media</option><option value="1">Computer · Presentation</option><option value="2">Computer · Media</option></select></label><div><div id="storage" class="muted">Connecting to your device…</div><div id="dirty" class="dirty">No unsaved changes</div></div></div>
+<p id="message" class="message" role="status" aria-live="polite">Loading configuration…</p>
+<form id="editor"><fieldset id="fields" disabled><div id="keys" class="grid"></div></fieldset>
+<div class="actions"><button id="save" class="primary" type="submit" disabled>Save this profile</button><button id="reload" type="button">Reload from device</button><button id="reset" type="button" disabled>Reset this profile</button></div></form>
+<section class="help"><h2>How key mapping works</h2><p><strong>Keyboard:</strong> one key plus optional Ctrl, Shift, Alt or Win/Cmd. Actions depend on the focused app and its shortcuts.</p><p><strong>Media:</strong> playback, volume and track controls. Phone mute depends on the phone and player; it is not the ringer or Do Not Disturb switch.</p><p><strong>Labels:</strong> 1–12 printable English/ASCII characters. The OLED overview shows the first 10. This is a name, not text to type.</p><p><strong>Repeat:</strong> available on direction buttons only. A and B fire on release; holding A+B for 1.2 seconds remains the Back gesture and cannot be reassigned.</p><p>Saving affects only the selected profile. No macros, scripts, firmware uploads or browser-triggered key presses are provided. Setup closes after 10 minutes without a page request; unsaved browser edits are not stored.</p></section>
+<footer><button id="resetAll" class="danger" disabled>Restore all three profiles</button><button id="exit" disabled>Exit setup</button><p>Press B on the remote to exit at any time. Wi-Fi turns off; saved mappings stay on the device.</p></footer>
+<noscript>This page needs JavaScript. It does not download any Internet libraries.</noscript>
+</main>
+</body>
+</html>

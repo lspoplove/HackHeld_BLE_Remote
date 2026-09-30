@@ -1,0 +1,66 @@
+PASS all factory defaults are valid
+PASS explicit wire-format encoding
+PASS wire-format round trip
+PASS CRC rejects a corrupted record
+PASS failed decode does not modify output
+PASS truncated record rejected
+PASS unknown schema rejected
+PASS maximum unsigned integer parses
+PASS integer overflow rejected
+PASS negative malformed and empty integers rejected
+PASS whitespace and bounded overflow rejected
+PASS Ctrl+C mapping accepted
+PASS A-repeat is rejected by config validator
+PASS unsupported modifier bits rejected
+PASS nonprintable label rejected
+PASS keyboard modifier cannot be applied to media
+PASS runtime profile reads editable config
+PASS factory preset remains unchanged
+PASS blank storage boots defaults without writing mappings
+PASS save performs one write and updates revision
+PASS identical save skips flash write
+PASS simulated restart loads saved mappings
+PASS storage failure is reported
+PASS storage failure leaves active mappings unchanged
+PASS corrupt stored config safely loads defaults
+PASS corrupt-storage fallback is visible
+PASS unavailable NVS reported for load and save
+
+27 config/codec/storage checks passed with simulated NVS.
+PASS Wi-Fi is off before Web Setup
+PASS explicit entry starts an AP
+PASS OLED credentials and per-device SSID generated
+PASS embedded HTML route responds
+PASS no-cache and frame protection headers
+PASS config API includes the three profiles
+PASS per-session write token returned
+PASS catalog includes supported keyboard and media usages
+PASS save without session token rejected
+PASS cross-origin write rejected
+PASS non-device Host rejected
+PASS unexpected content type rejected
+PASS oversized body rejected by endpoint
+PASS missing field rejected
+PASS duplicate field rejected
+PASS A-repeat rejected over HTTP
+PASS negative usage rejected over HTTP
+PASS long label rejected
+PASS non-ASCII label rejected
+PASS button order mismatch rejected
+PASS valid Ctrl+C saved and applied
+PASS saving presentation leaves other profiles intact
+PASS stale browser revision rejected
+PASS quote and backslash safely encoded in JSON
+PASS storage failure is not presented as success
+PASS reset profile restores exact v2 default
+PASS restore all endpoint accepted
+PASS GET cannot mutate configuration
+PASS web exit responds before closing
+PASS exit allows response grace period
+PASS exit event emitted after grace period
+PASS exit stops AP and clears session secrets
+PASS setup can restart without duplicate routes
+PASS idle session expires after ten minutes
+PASS AP start failure cleans up Wi-Fi
+
+35 web endpoint checks passed using transport test doubles.

@@ -1,0 +1,46 @@
+PASS default pin-map gate stays closed
+PASS unverified hardware never initializes BLE
+PASS unverified hardware never enables Wi-Fi
+PASS boot preserves Phone / Computer choices
+PASS no BLE initialization/advertising before selection
+PASS Phone starts advertising and opens phone controls
+PASS BLE initializes once after selection
+PASS simulated encrypted subscribed link is ready
+PASS all six phone buttons submit correct media usages
+PASS phone controls submit no keyboard usages
+PASS Phone A+B returns to device menu and disconnects
+PASS exit chord submits no play/pause or mute
+PASS Computer has only two modes
+PASS returning to selection reuses BLE rather than reinitializing it
+PASS confirm/release does not leak an F5 or media action
+PASS all six Presentation buttons preserve v1 mapping
+PASS Presentation submits no media usages
+PASS PC A+B returns to modes without disconnecting
+PASS PC exit chord submits no F5/Esc
+PASS PC Media opens from the two-item submenu
+PASS all six PC Media buttons preserve v1 mapping
+PASS PC Media submits no keyboard usages
+PASS PC menu B returns to device selection and disconnects
+PASS menu-only navigation never submits host commands
+PASS offline taps are not replayed on reconnection
+PASS A held across reconnect does not fire on release
+PASS fresh A tap still works after reconnect guard
+PASS pairing A confirmation is not a play/pause command
+PASS finishing pairing does not replay the confirmation key
+PASS root Web Setup starts AP and shows credentials
+PASS Web Setup runs without an active BLE host or advertising
+PASS OLED shows the manual browser address
+PASS physical keys in Web Setup never submit HID commands
+PASS editable mappings saved while setup is open
+PASS B exits Web Setup and stops Wi-Fi
+PASS Phone uses the saved A mapping after setup exit
+PASS OLED uses the configured action label
+PASS Presentation uses the configured keyboard key
+PASS configured Ctrl+Shift modifiers reach the keyboard report
+PASS Presentation left label is not overwritten by old hard-coded text
+PASS Web Setup can be entered again after BLE use
+PASS web API available from the integrated application
+PASS browser exit returns application to root and closes Wi-Fi
+PASS idle web timeout returns application to root
+
+41 mocked integration checks passed; NOT physical BLE tests.
